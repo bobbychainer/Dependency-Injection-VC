@@ -111,6 +111,11 @@ namespace VContainer.Unity
             Instance = null;
         }
 
+        void OnDestroy()
+        {
+            Instance = null;
+        }
+
         void OnFirstSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             if (RootLifetimeScope != null &&
